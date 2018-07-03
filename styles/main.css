@@ -1,0 +1,66 @@
+/*Set the default font for the document to a sans-serif font.*/
+* {
+    font-family: sans-serif;
+  }
+/*Adjust the font sizes for all of the headings.*/
+h1 {
+    font-size:150%;
+}
+/*In addition, format the first letter of the first heading in the main
+content so it’s larger than the other letters in the heading.*/
+h1::first-letter {
+    font-size: 150%;
+}
+/*change the color of the first heading to orange, italicize it, and add a black shadow.
+indent both headings*/
+h2 {
+    font-size:210%;
+    font-style: italic;
+    color: orange;
+    text-shadow: 2px 2px black;
+    text-indent: 30px;
+}
+/*indent both headings*/
+header h3 {
+    font-size:110%;
+    text-indent: 30px;
+}
+h3 {
+    font-size:110%;
+    /*text-indent: 30px;*/
+}
+/*In the header, float the image to the left*/
+img {
+    float: left;
+}
+/*Format the links so they’re displayed in boldfaced orange whether or not they’ve been visited. If a link has the
+focus or the mouse is hovering over it, though, it should be displayed in green.*/
+a {
+    color: orange;
+    font-weight:bold;
+}
+a:visited {
+    color: orange;
+    font-weight:bold;
+}
+a:hover {
+    color: green;
+    font-weight:bold;
+}
+a:focus {
+    color: green;
+    font-weight:bold;;
+}
+a:active {
+    color: orange;
+    font-weight:bold;
+}
+/*Format the list to increase the space between the list items.*/
+li {
+    margin: 5px 0;
+}
+/*Reduce the font size for the footer and center it.*/
+footer {
+    font-size:smaller;
+    text-align: center;
+}
