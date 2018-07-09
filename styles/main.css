@@ -1,7 +1,30 @@
 /*Set the default font for the document to a sans-serif font.*/
 * {
     font-family: sans-serif;
-  }
+    
+ }
+/*Format the body of the page so it’s 800 pixels wide, has a white background, has a black border
+with a shadow, and is centered in the browser window.
+Add a background image behind the body of the page that uses the bats.gif file in the images
+folder. This image should repeat both horizontally and vertically.*/
+html {
+    background-image: url("../images/bats.gif");
+    background-repeat: repeat repeat;
+    margin: 15px;
+}
+/*Adjust the margins and padding for the elements on the page so it looks as shown above.*/
+body {
+    width: 800px;
+    align-content: center;
+    background-color: white;
+    position: relative;
+    margin: auto auto auto auto;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    box-shadow: 5px 5px 5px 5px black;
+}
 /*Adjust the font sizes for all of the headings.*/
 h1 {
     font-size:150%;
@@ -13,17 +36,33 @@ h1::first-letter {
 }
 /*change the color of the first heading to orange, italicize it, and add a black shadow.
 indent both headings*/
+/*Remove the shadow, italics, and color from the first heading in the header.*/
 h2 {
     font-size:210%;
     font-style: italic;
-    color: orange;
-    text-shadow: 2px 2px black;
+    /*color: orange;
+    text-shadow: 2px 2px black;*/
     text-indent: 30px;
+}
+/*Add a black border below the header*/
+/*Add a 45-degree gradient to the header and footer.
+The gradient in the header should range from white at the left to orange ¾ of the way 
+to the right to black at the right. The gradient in the
+footer should be the reverse.*/
+header {
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: black;
+    background: linear-gradient(45deg, white, orange, orange, black); 
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    width: 800px; 
 }
 /*indent both headings*/
 header h3 {
     font-size:110%;
     text-indent: 30px;
+
 }
 h3 {
     font-size:110%;
@@ -55,12 +94,50 @@ a:active {
     color: orange;
     font-weight:bold;
 }
+/*Move the unordered list to a sidebar that’s floated to the left of the remaining content, which
+should be coded in a section. The width of the sidebar should be 160 pixels. Be sure to clear the
+footer so it’s not displayed below the list.*/
+#sidebar {
+    width: 160px;
+    float: left;
+    background-color: white;
+    word-wrap: break-word; 
+    overflow: hidden; 
+}
+#content  {
+    width: 640px;
+    float: right;
+    background-color: white;
+}
+#container {
+    margin: 0 auto;
+	width: 800px; 	
+}
 /*Format the list to increase the space between the list items.*/
 li {
     margin: 5px 0;
 }
 /*Reduce the font size for the footer and center it.*/
+/*Add a black border above the footer*/
+/*Add a 45-degree gradient to the footer
+The gradient in the header should range from white at the left to orange ¾ of the way 
+to the right to black at the right. The gradient in the
+footer should be the reverse.*/
 footer {
+    bottom: 0;
+    clear: both;
+    width: 800px;
+    
+    background-color: white;
+
     font-size:smaller;
     text-align: center;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: black;
+    background: linear-gradient(45deg, black, orange, orange, white); 
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    
+    
 }
